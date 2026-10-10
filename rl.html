@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head></head>
+<body>
+    <h1><b>Анекдоти Русанівського ліцею</b></h1>
+    <section>
+        <div> 
+            <img src="it/SHamovich-sm.jpg" alt="Опис зображення" width="300" height="400">
+            <h2>Олександр Анатолійович</h2>
+            <p>Учитель математики</p>
+            <a href="a1.html">"І де я знаходжусь?"</a>
+        </div>
+        <div> 
+            <img src="it/Taras-Timoshkevich_Mini.jpg" alt="Опис зображення" width="300" height="400">
+            <h2>Тарас Дмитрович</h2>
+            <p>Учитель математики</p>
+            <a href="a2.html">"Що таке логіка??"</a>
+        </div>
+        <div> 
+            <img src="it/CHarkina-sm.jpg" alt="Опис зображення" width="300" height="400">
+            <h2>Наталія Георгівна</h2>
+            <p>Учителька фізики</p>
+            <a href="a3.html">"Чому фізики краще за математиків?"</a>
+        </div>
+    </section>
+</body>
+<style>
+    body {   
+        background-color: #708090;
+        text-align: center;
+    } 
+    section {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    section div {
+        min-width: 0;
+    }
+
+    img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    @media (max-width: 950px) {
+            section {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+    }
+
+    @media (max-width: 600px) {
+            section {
+                grid-template-columns: 1fr;
+            }
+    }
+    
+    h1 {
+        color: darkgreen;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+</style>
